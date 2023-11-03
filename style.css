@@ -392,3 +392,35 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+
+nav .fa-solid{
+    display: none;
+}
+
+/* ---------------css Responsive for mobiles-------------- */
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background:  rgb(204, 204, 51);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+}
