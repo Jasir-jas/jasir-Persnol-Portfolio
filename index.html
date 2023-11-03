@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasir V K Persnol Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div id="header">
         <div class="container">
             <nav>
                 <a href="#">
-                <img src="images/jasilogo.png" alt="" class="logo">
+                    <img src="images/jasilogo.png" alt="" class="logo">
                 </a>
                 <!-- <h1>Jasir V K</h1> -->
                 <ul>
@@ -28,7 +30,82 @@
                 <h1>Hi, Iam <span>Jasir</span><br> From Thrissur,<br>Kerala</h1>
             </div>
         </div>
-
     </div>
+
+    <!-- -----------------about----------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about2.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('expereience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python-Django</span><br>Full Stack Devoloper</li>
+                            <li><span>Front-end</span><br>Web Designer</li>
+                            <li><span>Back-end</span><br>Web Devoloper</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="expereience">
+                        <ul>
+                            <li><span>Internship</span><br>@ One Team Solutions EdTech Pvt.Ltd.Kochi</li>
+                            <li><span>Front-end</span><br>Web Designer</li>
+                            <li><span>Back-end</span><br>Web Devoloper</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Bachelor Of Computer Application</li>
+                            <li><span>2017-2019</span><br>Secondary School</li>
+                            <li><span>2017</span><br>High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+
+    </script>
 </body>
+
 </html>
