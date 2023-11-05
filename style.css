@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     /* background-color: #d3d3d3; */
     background-color: black;
@@ -18,6 +22,7 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    
 }
 
 .container{
@@ -468,4 +473,10 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
